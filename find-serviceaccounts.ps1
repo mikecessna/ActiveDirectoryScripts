@@ -1,7 +1,7 @@
 # Script to find servers in AD and output any services running as a 'non-normal' account.
 
 #Load the AD module if not already loaded.
-If (!(Get-module Activedirectory )) {Import-Module OperationsManager}
+If (!(Get-module Activedirectory )) {Import-Module Activedirectory}
 
 
 $systemservicenames=@("LocalSystem",
